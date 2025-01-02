@@ -1,61 +1,85 @@
- * # SharePics Project Documentation
- * 
- * This documentation provides a comprehensive guide to integrating Prisma into your project to fetch and display posts from the database. It includes steps for setting up authentication, fetching posts, and rendering them dynamically.
- * 
- * ## Prerequisites
- * 
- * - Node.js installed on your machine
- * - A PostgreSQL database
- * - Prisma CLI installed (`npm install @prisma/cli`)
- * - Next.js project setup
- * 
- * ## Steps to Implement
- * 
- * ### 1. Separate Authentication Logic
- * 
- * Move the authentication check to a utility function or middleware for better reusability.
- * 
- * - Create `auth.js` to handle authentication checks.
- * 
- * ### 2. Fetch Posts with Prisma
- * 
- * Use Prisma to fetch posts for the authenticated user in the `getServerSideProps` function.
- * 
- * - Modify the `Profile` component to fetch and display posts.
- * 
- * ### 3. Create API Routes for Posts
- * 
- * Add API endpoints to fetch and delete posts using Prisma.
- * 
- * - Create `pages/api/posts.js` to handle fetching posts.
- * - Create `pages/api/posts/[id].js` to handle deleting posts.
- * 
- * ### 4. Set Up Prisma Client
- * 
- * Ensure `lib/prisma.js` exists to initialize Prisma.
- * 
- * - Create `lib/prisma.js` to set up the Prisma client.
- * 
- * ### 5. Database and `.env`
- * 
- * Make sure your `.env` file has the database URL and run migrations.
- * 
- * - Add `DATABASE_URL` to your `.env` file.
- * - Run `npx prisma migrate dev` to apply migrations.
- * 
- * ## How to Run
- * 
- * 1. Clone the repository.
- * 2. Install dependencies using `npm install`.
- * 3. Set up your `.env` file with the correct `DATABASE_URL`.
- * 4. Run database migrations using `npx prisma migrate dev`.
- * 5. Start the development server using `npm run dev`.
- * 
- * ## Conclusion
- * 
- * This setup integrates Prisma seamlessly, fetching posts for the authenticated user and displaying them dynamically. If you encounter any issues or have questions, feel free to raise them in the project's issue tracker.
- * 
- * ## Issues and Contributions
- * 
- * If you find any mistakes or have suggestions for improvements, please raise an issue or submit a pull request. Contributions are welcome!
-To improve your code by integrating Prisma and displaying posts from the database, you can take the following steps. This includes creating a separate utility for authentication, fetching posts with Prisma, and rendering them dynamically. Here’s how you can do it:
+# SharePics
+
+SharePics is a modern web application that allows users to share pictures, create posts, and interact with other users' content. Built with Next.js and featuring robust authentication through Kinde.
+
+## Features
+
+- User authentication with Kinde
+- Image sharing capabilities
+- Create and delete posts
+- Responsive design with Tailwind CSS
+- PostgreSQL database with Prisma ORM
+- Containerized database using Docker
+
+## Tech Stack
+
+- **Web Framework**: Next.js
+- **Authentication**: Kinde
+- **Database**: PostgreSQL
+- **ORM**: Prisma
+- **Styling**: Tailwind CSS
+- **HTTP Client**: Axios
+- **Containerization**: Docker
+
+## Prerequisites
+
+Before running this project, make sure you have:
+
+- Node.js (v18 or higher)
+- Docker Desktop
+- A Kinde account and API credentials
+
+## Getting Started
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/sharepics.git
+cd sharepics
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Set up environment variables:
+Create a `.env` file in the root directory with the following variables:
+```plaintext
+DATABASE_URL="postgresql://username:password@localhost:5432/sharepics"
+KINDE_CLIENT_ID=your_kinde_client_id
+KINDE_CLIENT_SECRET=your_kinde_client_secret
+KINDE_ISSUER_URL=your_kinde_issuer_url
+```
+
+4. Start the PostgreSQL database using Docker:
+```bash
+docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+
+```
+
+5. Run Prisma migrations:
+```bash
+npx prisma migrate dev
+```
+
+6. Start the development server:
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:3000`.
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## Acknowledgments
+
+- Next.js documentation
+- Kinde Authentication
+- Prisma documentation
+- Tailwind CSS documentation
