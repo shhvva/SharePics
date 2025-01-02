@@ -1,4 +1,6 @@
-![thumbnail](https://github.com/user-attachments/assets/32ca8253-0623-4d7d-a475-41dff7fe3bf9)# SharePics
+![thumbnail](https://github.com/user-attachments/assets/32ca8253-0623-4d7d-a475-41dff7fe3bf9)
+
+# SharePics
 
 SharePics is a modern web application that allows users to share pictures, create posts, and interact with other users' content. Built with Next.js and featuring robust authentication through Kinde.
 
