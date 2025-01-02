@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --background: #121212;
+    --menu_bar: #181818;
+    --top_gradient: #404040;
+    --bottom_gradient: #282828;
+    --primary_text: #FFFFFF;
+    --secondary_text: #B3B3B3;
+
+}
+body {
+    background-color: var(--background);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--primary_text);
+}
+
+span {
+    color: var(--secondary_text);
+}
