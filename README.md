@@ -1,4 +1,4 @@
-# SharePics
+![thumbnail](https://github.com/user-attachments/assets/32ca8253-0623-4d7d-a475-41dff7fe3bf9)# SharePics
 
 SharePics is a modern web application that allows users to share pictures, create posts, and interact with other users' content. Built with Next.js and featuring robust authentication through Kinde.
 
@@ -10,6 +10,10 @@ SharePics is a modern web application that allows users to share pictures, creat
 - Responsive design with Tailwind CSS
 - PostgreSQL database with Prisma ORM
 - Containerized database using Docker
+
+## Video
+
+[![Watch the video](![thumbnail](https://github.com/user-attachments/assets/b8fc651a-f5de-4351-a634-0537a5f2d59b))](https://youtu.be/bPl-KpdwBPE)
 
 ## Tech Stack
 
