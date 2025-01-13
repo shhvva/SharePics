@@ -1,5 +1,3 @@
-![thumbnail](https://github.com/user-attachments/assets/32ca8253-0623-4d7d-a475-41dff7fe3bf9)
-
 # SharePics
 
 SharePics is a modern web application that allows users to share pictures, create posts, and interact with other users' content. Built with Next.js and featuring robust authentication through Kinde.
@@ -13,9 +11,23 @@ SharePics is a modern web application that allows users to share pictures, creat
 - PostgreSQL database with Prisma ORM
 - Containerized database using Docker
 
+## Snapshots
+
+1. Profile Page
+
+![Screenshot 2025-01-13 at 11-53-23 auth example - Copy](https://github.com/user-attachments/assets/8f330ccf-88a1-4c01-92ae-a4dcad398f56)
+
+2. Feed
+
+![Screenshot 2025-01-13 at 11-53-09 auth example - Copy](https://github.com/user-attachments/assets/541eda4f-1d50-46ec-af19-292d2ae17492)
+
+3. Create a Post
+
+![Screenshot 2025-01-13 at 11-53-33 auth example - Copy](https://github.com/user-attachments/assets/4517a7dc-de64-414b-992f-b07aee2b46ba)
+
 ## Video
 
-[![Watch the video](![thumbnail](https://github.com/user-attachments/assets/b8fc651a-f5de-4351-a634-0537a5f2d59b))](https://youtu.be/bPl-KpdwBPE)
+https://github.com/user-attachments/assets/e3560ae9-a96b-4095-a82b-04a2299c0490
 
 ## Tech Stack
 
@@ -82,10 +94,3 @@ The application will be available at `http://localhost:3000`.
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
-## Acknowledgments
-
-- Next.js documentation
-- Kinde Authentication
-- Prisma documentation
-- Tailwind CSS documentation
